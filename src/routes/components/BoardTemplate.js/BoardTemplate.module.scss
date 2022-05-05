@@ -1,0 +1,12 @@
+@use '/src/styles/constants/colors';
+
+.container {
+  margin-bottom: 120px;
+
+  .nameContainer {
+    margin: 10px auto;
+    color: colors.$GREENA;
+    font-weight: 700;
+    font-size: 25px;
+  }
+}
