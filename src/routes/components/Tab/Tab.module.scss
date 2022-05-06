@@ -1,0 +1,38 @@
+@use '/src/styles/constants/colors';
+
+.wrapper{
+  position: relative;
+  display: flex;
+  width: 600px;
+  margin-bottom: 50px;
+  border-bottom: 4px solid colors.$GRAYD;
+  z-index: 0;
+
+  .category{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 80px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  // color: ${({ isSelected, name }) =>
+  //   isSelected === name ? "#000000" : "#d3d3d3"};
+  z-index: 9999;
+  cursor: pointer;
+  }
+
+  .highlight{
+  position: absolute;
+  top: 80px;
+  width: 200px;
+  height: 4px;
+  border-radius: 100px;
+  background-color: colors.$GREENA;
+  // transform: translateX(${({ number }) => `${number * 100}%`});
+  // transition: 0.4s ease-out;
+  }
+}
+
