@@ -15,8 +15,8 @@
 
       .selectWord {
         margin-top: 16px;
-        color: colors.$GRAYA;
         font-size: 18px;
+        color: colors.$GRAYA;
       }
     }
 
@@ -27,8 +27,6 @@
       width: 16px;
       margin-top: 18px;
       margin-left: 270px;
-      -webkit-filter: opacity(0.5) drop-shadow(0 0 0 colors.$GRAYD);
-      filter: opacity(0.5) drop-shadow(0 0 0 colors.$GRAYD);
     }
   }
 
@@ -44,8 +42,8 @@
       border-top-right-radius: 8px;
 
       &::placeholder {
-        color: colors.$GRAYA;
         font-size: 17px;
+        color: colors.$GRAYA;
       }
 
       &:focus {
@@ -60,24 +58,22 @@
       width: 18px;
       margin-top: 17px;
       margin-left: 10px;
-      -webkit-filter: opacity(0.5) drop-shadow(0 0 0 colors.$GRAYA);
-      filter: opacity(0.5) drop-shadow(0 0 0 colors.$GRAYA);
     }
 
     .dropdownList {
       width: 300px;
       height: 100%;
+      padding-inline-start: 0;
       margin: 0;
-      color: colors.$GRAY6;
       font-size: 20px;
       line-height: 35px;
+      color: colors.$GRAY6;
       list-style: none;
+      cursor: pointer;
       border: colors.$GRAYD solid 1px;
       border-top: none;
       border-bottom-right-radius: 8px;
       border-bottom-left-radius: 8px;
-      cursor: pointer;
-      padding-inline-start: 0;
 
       li {
         padding-left: 35px;

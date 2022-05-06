@@ -6,8 +6,8 @@
 
   span {
     margin-bottom: 7px;
-    color: colors.$GRAY6;
     font-size: 17px;
+    color: colors.$GRAY6;
   }
 
   .emailWrapper {
@@ -15,8 +15,8 @@
 
     .emailInput {
       width: 400px;
-      margin-bottom: 40px;
       padding: 15px;
+      margin-bottom: 40px;
       font-size: 17px;
       border: 1px solid colors.$GRAYD;
       border-radius: 7px;
@@ -45,8 +45,8 @@
 
     .pwInput {
       width: 400px;
-      margin-bottom: 40px;
       padding: 15px;
+      margin-bottom: 40px;
       font-size: 17px;
       border: 1px solid colors.$GRAYD;
       border-radius: 7px;
@@ -66,8 +66,8 @@
       left: 0;
       margin-top: 15px;
       margin-left: 350px;
-      color: #474747;
       font-size: 23px;
+      color: colors.$GRAY2;
     }
 
     .visibleIcon {
@@ -76,8 +76,8 @@
       left: 0;
       margin-top: 15px;
       margin-left: 350px;
-      color: #12b8ad;
       font-size: 23px;
+      color: colors.$GREENA;
     }
   }
 }
