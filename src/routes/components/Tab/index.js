@@ -14,7 +14,7 @@ function Index() {
       {['설혜린', '설토실', '설토린'].map((word, index) => {
         return (
           <button
-            className={styles.category}
+            className={`${styles.category} ${selected === word ? styles.active : styles.inactive}`}
             key={word}
             id={index}
             name={word}

@@ -1,0 +1,50 @@
+@use '/src/styles/constants/colors';
+
+.container {
+  .toggleWrapper {
+    width: 450px;
+    height: 60px;
+    padding: 0 5px;
+    background-color: #f2f1f0;
+    border-radius: 50px;
+
+    .slider {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: inherit;
+      height: inherit;
+
+      .activeBar {
+        position: absolute;
+        left: 0;
+        z-index: 2;
+        width: 225px;
+        height: 55px;
+        cursor: pointer;
+        background-color: colors.$WHITE;
+        border-radius: 50px;
+        transition: 0.4s;
+        transform: translateX(0);
+        // transform: translateX($ {({currentActive}) => (currentActive === '기본' ? '0%': '100%')});
+      }
+
+      .active {
+        transform: translateX(100%);
+      }
+
+      .default,
+      .detail {
+        position: relative;
+        z-index: 101;
+        width: 50%;
+        height: 100%;
+        font-size: 23px;
+        cursor: pointer;
+        background: none;
+        border-style: none;
+      }
+    }
+  }
+}

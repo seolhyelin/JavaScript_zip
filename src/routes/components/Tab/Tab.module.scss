@@ -1,38 +1,44 @@
 @use '/src/styles/constants/colors';
 
-.wrapper{
+.wrapper {
   position: relative;
+  z-index: 0;
   display: flex;
   width: 600px;
   margin-bottom: 50px;
   border-bottom: 4px solid colors.$GRAYD;
-  z-index: 0;
 
-  .category{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 80px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  background: none;
-  border: none;
-  // color: ${({ isSelected, name }) =>
-  //   isSelected === name ? "#000000" : "#d3d3d3"};
-  z-index: 9999;
-  cursor: pointer;
+  .category {
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 80px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
   }
 
-  .highlight{
-  position: absolute;
-  top: 80px;
-  width: 200px;
-  height: 4px;
-  border-radius: 100px;
-  background-color: colors.$GREENA;
-  // transform: translateX(${({ number }) => `${number * 100}%`});
-  // transition: 0.4s ease-out;
+  .active {
+    font-weight: 600;
+    color: colors.$BLACK;
+  }
+
+  .inactive {
+    font-weight: 200;
+    color: colors.$GRAYA;
+  }
+
+  .highlight {
+    position: absolute;
+    top: 80px;
+    width: 200px;
+    height: 4px;
+    background-color: colors.$GREENA;
+    border-radius: 100px;
+    // transform: translateX(${({ number }) => `${number * 100}%`});
+    // transition: 0.4s ease-out;
   }
 }
-
