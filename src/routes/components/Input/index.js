@@ -10,7 +10,7 @@ function Input() {
     visible: false,
   })
 
-  const style = { color: `${isCheck ? '#12b8ad' : '#e0e0e0'}` }
+  const style = { color: `${isCheck ? '#fca503' : '#e0e0e0'}` }
 
   const handleCheckEmail = (e) => {
     const regExp = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i

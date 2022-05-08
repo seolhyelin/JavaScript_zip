@@ -19,7 +19,7 @@ function Slider() {
           onClick={() => setPercent(i)}
           percent={percent}
           role='presentation'
-          style={{ backgroundColor: `${Number(i) <= percent ? '#10aeaf' : '#d3d3d3'}` }}
+          style={{ backgroundColor: `${Number(i) <= percent ? '#ffe2ab' : '#d3d3d3'}` }}
         />
       )
     }

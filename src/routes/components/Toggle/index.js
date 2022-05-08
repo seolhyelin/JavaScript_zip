@@ -21,7 +21,6 @@ function Toggle() {
           <div
             className={`${currentActive === '기본' ? styles.activeBar : styles.activeRightBar}`}
             currentActive={currentActive}
-            // stlye={{ transform: `translateX(${currentActive === '기본' ? '0%' : '100%'})` }}
           />
           <button
             className={styles.default}
@@ -29,7 +28,7 @@ function Toggle() {
             onClick={handleActive}
             currentActive={currentActive}
             style={{
-              color: `${currentActive === '기본' ? '#000000' : '#787878'}`,
+              color: `${currentActive === '기본' ? '#ffa700' : '#787878'}`,
               fontWeight: `${currentActive === '기본' ? '600' : '400'}`,
             }}
           >
@@ -41,7 +40,7 @@ function Toggle() {
             onClick={handleActive}
             currentActive={currentActive}
             style={{
-              color: `${currentActive === '상세' ? '#000000' : '#787878'}`,
+              color: `${currentActive === '상세' ? '#ffa700' : '#787878'}`,
               fontWeight: `${currentActive === '상세' ? '600' : '400'}`,
             }}
           >
