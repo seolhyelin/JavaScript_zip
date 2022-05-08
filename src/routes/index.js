@@ -18,9 +18,9 @@ function App() {
       <BoardTemplate name='Toggle'>
         <Toggle />
       </BoardTemplate>
-      {/* <BoardTemplate name='Slider'>
+      <BoardTemplate name='Slider'>
         <Slider />
-      </BoardTemplate> */}
+      </BoardTemplate>
       <BoardTemplate name='Dropdown'>
         <Dropdown />
       </BoardTemplate>

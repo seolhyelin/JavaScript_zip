@@ -27,7 +27,11 @@ function Index() {
         )
       })}
 
-      <div className={styles.highlight} selectNumber={selectNumber} />
+      <div
+        className={styles.highlight}
+        selectNumber={selectNumber}
+        style={{ transform: `translateX(${selectNumber * 100}%)` }}
+      />
     </section>
   )
 }
